@@ -7,7 +7,7 @@ load_dotenv()
 SECRET_KEY = str(os.environ.get("SECRET_KEY"))
 ALGORITHM = str(os.environ.get("ALGORITHM"))
 
-
+#---------------------get_encode_token--------------------
 def get_encode_token(id):
     payload = {
         "user_id" : id,

@@ -5,6 +5,7 @@ from datetime import datetime
 from database.Database import Base
 import uuid
 
+# ----------------------------------------------User Table------------------------------------------------------
 class User(Base):
     __tablename__ = 'users'
     id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))

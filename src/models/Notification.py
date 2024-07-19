@@ -5,7 +5,7 @@ import uuid
 from database.Database import Base
 
 
-
+# ----------------------------------------------Notification Table------------------------------------------------------
 class Notification(Base):
     __tablename__ = 'NotificationInfo'
     

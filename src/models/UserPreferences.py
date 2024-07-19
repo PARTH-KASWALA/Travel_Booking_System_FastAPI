@@ -5,6 +5,7 @@ from database.Database import Base
 from sqlalchemy.orm import relationship
 
 
+# ----------------------------------------------UserPreferences Table------------------------------------------------------
 class UserPreferences(Base):
     __tablename__ = "user_preferences"
     id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))

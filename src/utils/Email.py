@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 import os
 
 
-
+#---------------------send_notification_via_email--------------------
 def send_notification_via_email(receiver_email: str, message: str):
     sender_email = os.getenv("sender_email")
     password = os.getenv("password")

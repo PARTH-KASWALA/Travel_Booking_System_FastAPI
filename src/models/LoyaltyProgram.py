@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from database.Database import Base
 from sqlalchemy.orm import relationship
 
+# ----------------------------------------------LoyaltyProgram Table------------------------------------------------------
 class LoyaltyProgram(Base):
     __tablename__ = "loyalty_programs"
     id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))

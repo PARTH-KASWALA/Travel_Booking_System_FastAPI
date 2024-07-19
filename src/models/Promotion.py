@@ -3,7 +3,7 @@ import uuid
 from datetime import datetime, timedelta
 from database.Database import Base
 
-
+# ----------------------------------------------Promotion Table------------------------------------------------------
 class Promotion(Base):
     __tablename__ = "promotions"
     id = Column(String(100),  primary_key=True, default=str(uuid.uuid4()))

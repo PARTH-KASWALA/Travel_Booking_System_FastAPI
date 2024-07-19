@@ -4,7 +4,7 @@ from sqlalchemy.orm import relationship
 from datetime import datetime, timedelta
 from database.Database import Base
 
-
+# ----------------------------------------------Destination Table------------------------------------------------------
 class Destination(Base):
     __tablename__ = "destinations"
     id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))

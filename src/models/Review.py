@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from database.Database import Base
 from sqlalchemy.orm import relationship
 
+# ----------------------------------------------Review Table------------------------------------------------------
 class Review(Base):
     __tablename__ = "reviews"
     id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))

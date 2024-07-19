@@ -27,6 +27,7 @@ def create_booking(booking: BookingBase):
     return db_booking
 
 
+#---------------------cancel_booking--------------------
 def cancel_booking(booking_id: str):
     booking = db.query(Booking).filter(Booking.id == booking_id).first()
     if not booking:
