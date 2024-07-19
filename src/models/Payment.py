@@ -5,12 +5,12 @@ from datetime import datetime, timedelta
 from sqlalchemy.orm import relationship
 
 
-
+# ----------------------------------------------Payment Table------------------------------------------------------
 class Payment(Base):
     __tablename__ = "payment"
-    payment_id = Column(String(50), primary_key=True, default=lambda: str(uuid.uuid4()))
+    id = Column(String(100), primary_key=True, default=str(uuid.uuid4()))
     user_id = Column(String(50),ForeignKey("users.id"),nullable=False)
-    booking_id = Column(String(50), ForeignKey("booking.booking_id"), nullable=False)
+    booking_id = Column(String(100), ForeignKey("bookings.id"), nullable=False)
     amount = Column(String(50), nullable=False)
     payment_status = Column(String(50), nullable=False)
     is_active = Column(Boolean, default=True)

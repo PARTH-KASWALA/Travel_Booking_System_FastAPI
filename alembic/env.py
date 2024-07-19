@@ -24,6 +24,7 @@ from src.models.OTP import OTP
 from src.models.Promotion import Promotion
 from src.models.Review import Review
 from src.models.Service import Service
+from src.models.Payment import Payment
 
 from src.models.UserPreferences import UserPreferences
 

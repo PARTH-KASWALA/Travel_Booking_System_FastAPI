@@ -15,6 +15,7 @@ def create_booking(booking: BookingBase):
         id=str(uuid.uuid4()),
         user_id=booking.user_id,
         service_id = booking.service_id,
+        payment_id = booking.payment_id,
         start_date = booking.start_date,
         end_date = booking.end_date,
         status = booking.status,

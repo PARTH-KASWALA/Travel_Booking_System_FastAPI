@@ -1,5 +1,3 @@
-
-
 from fastapi import FastAPI, HTTPException, APIRouter, Depends, Security
 from sqlalchemy.orm import Session
 from typing import List
@@ -27,13 +25,13 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 pwdd = APIRouter()
 db = SessionLocal()
 
-
+# ----------------------------------------------make_payments------------------------------------------------------
 @pwdd.post("/make_payments", response_model=PaymentBase)
 def make_payments(pay: PaymentBase):
     breakpoint()
     try:
         db_payment = Payment(
-            payment_id=str(uuid.uuid4()),
+            id=str(uuid.uuid4()),
             user_id=pay.user_id,
             booking_id=pay.booking_id,
             amount=pay.amount,

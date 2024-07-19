@@ -8,7 +8,7 @@ from src.routers.Review_router import Review_router
 from src.routers.Service_router import Service_router
 from src.routers.UserPreferences_router import UserPreferences_router
 from src.routers.Notification_router import Notifications
-# from src.routers.Notification_router 
+from src.routers.Payment_router import pwdd
 
 
 app = FastAPI()
@@ -22,3 +22,4 @@ app.include_router(Review_router)
 app.include_router(Service_router)
 app.include_router(UserPreferences_router)
 app.include_router(Notifications)
+app.include_router(pwdd)
