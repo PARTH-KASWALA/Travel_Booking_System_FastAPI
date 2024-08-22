@@ -6,7 +6,7 @@ import uuid
 from database.Database import SessionLocal
 from typing import List
 
-UserPreferences_router = APIRouter()
+UserPreferences_router = APIRouter(tags=["UserPreferences"])
 db = SessionLocal()
 
 

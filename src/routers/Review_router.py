@@ -7,7 +7,7 @@ from database.Database import SessionLocal
 from typing import List
 
 
-Review_router = APIRouter()
+Review_router = APIRouter(tags=["Review"])
 db = SessionLocal()
 
 #---------------------create_all_review--------------------

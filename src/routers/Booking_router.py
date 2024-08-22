@@ -5,7 +5,7 @@ from src.models.Booking import Booking
 from src.schemas.Booking_Schemas import BookingResponse,BookingBase
 import uuid
 
-Booking_router = APIRouter()
+Booking_router = APIRouter(tags=["Booking"])
 db = SessionLocal()
 
 #---------------------create_booking--------------------

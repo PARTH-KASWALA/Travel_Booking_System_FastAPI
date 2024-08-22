@@ -7,7 +7,7 @@ from database.Database import SessionLocal
 from typing import List
 
 
-Promotion_router = APIRouter()
+Promotion_router = APIRouter(tags=["Promotion"])
 db = SessionLocal()
 
 #---------------------create_Promotion--------------------

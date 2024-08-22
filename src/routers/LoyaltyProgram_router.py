@@ -7,7 +7,7 @@ from database.Database import SessionLocal
 from typing import List
 
 
-LoyaltyProgram_router = APIRouter()
+LoyaltyProgram_router = APIRouter(tags=["LoyaltyProgram"])
 db = SessionLocal()
 
 #---------------------create_all_loyalty_programs----------------------

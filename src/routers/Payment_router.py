@@ -22,7 +22,7 @@ import smtplib
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
-pwdd = APIRouter()
+pwdd = APIRouter(tags=["Payment"])
 db = SessionLocal()
 
 # ----------------------------------------------make_payments------------------------------------------------------

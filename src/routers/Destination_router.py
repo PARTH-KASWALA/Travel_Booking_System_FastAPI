@@ -6,7 +6,7 @@ from database.Database import SessionLocal
 import uuid
 from typing import List
 
-Destination_router = APIRouter()
+Destination_router = APIRouter(tags=["Destination"])
 db = SessionLocal()
 
 #---------------------Create Destination--------------------

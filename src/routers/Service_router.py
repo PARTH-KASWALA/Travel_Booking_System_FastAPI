@@ -6,7 +6,7 @@ import uuid
 from database.Database import SessionLocal
 from typing import List
 
-Service_router = APIRouter()
+Service_router = APIRouter(tags=["Service"])
 db = SessionLocal()
 
 #---------------------create_service--------------------
